@@ -1,4 +1,4 @@
-# Book's Title
+# Wellcom in the Git's world
 
 ## Chapiter 1: Introduction
 Здесь будет введение в тему книги.
