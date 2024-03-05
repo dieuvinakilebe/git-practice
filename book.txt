@@ -3,5 +3,10 @@
 ## Chapiter 1: Introduction
 Здесь будет введение в тему книги.
 
-## Chapiter 2: Fondamebts of Git
+<<<<<<< HEAD
+## Chapiter 2: Fondaments of Git and magics conflicts
 Основные понятия и команды Git.
+======= 
+## Chapiter 2: Fondaments of Git
+Основные понятия и команды Git.
+>>>>>>> feature-login
