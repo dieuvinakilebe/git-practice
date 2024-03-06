@@ -1,0 +1,191 @@
+Сначала я создала репозиторий git-practice на GitHub и скопировала ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+Далее с помощью терминала и команд git clone и cd я перешла в папку для локального сохранения репозитория.
+Потом я создала новый текстовый файл example.txt, добавила в него некоторый текст и запушила на GitHub в основуную ветку master, используя команды git add, git commit -m и git push.
+Затем я создала новую ветку second branch с помощью команды git branch, переключился на нее с помощью git checkout.
+После я отредактировала файл example.txt, повторила некоторые шаги из пункта 3, переключилась обратно в основную ветку master помощью git checkout main и слила изменения из second branch в основную ветку, используя git merge и git push.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Работа с ветками
+Я создала новый текстовый файл с базовой структурой книги kniga.txt.
+ ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+С помощью git checkout -b создала новую ветку feature-login.
+Далее я внесла изменения в файл, закоммитил их и отправила ветку на GitHub, используя git add, git commit -m, git push origin.
+Работа с удаленным репозиторием
+Я переключилась на основную ветку master, внесла изменения в файл kniga.txt, закоммитила изменения и отправила их на GitHub с помощью git add, git commit -m, git push origin.
+Моделирование конфликта
+Я вернулась в ветку feature-login, изменила главу 2 в файле kniga.txt, закоммитила изменения и отправила их на GitHub, используя git checkout, git add, git commit -m, git push origin.
+Разрешение конфликта
+Я вернулась в основную ветку master и попробовала слить изменения с помощью git checkout master и git pull origin master. Возник конфликт.
+Я разрешила конфликт, удалив метки и оставив нужные изменения.
+Я закоммитила решение конфликта и отправила его на GitHub с помощью git add, git commit -m, git push.
+Автоматизация проверки формата файлов при коммите
+Я создала bash-script, который будет выполнять проверку формата .txt файлов![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Я добавила скрипт в репозиторий, поместив его в папку .git/hooks и убедившись, что у него есть права на выполнение с помощью cp и chmod +x.
+Далее я попробовала внести изменения и закоммитить. Теперь, при каждой попытке закоммитить изменения, Git будет автоматически выполнять проверку формата файлов перед коммитом.
+При возникновении необходимости внести изменения в файлы, чтобы они соответствовали формату, нужно внести изменения, добавить файлы и снова попробовать закоммитить.
+Использование Git Flow в проекте
+Сначала я проверила, есть ли у меня на компьютере Git Flow.
+Затем я выполнила инициализацию Git Flow в корне репозитория с помощью git flow init.
+Создала ветку для новой функциональности "task-management" с помощью git flow feature start task-management.
+Внесла изменения в код для добавления функционала управления задачами task_manager.py и выполнила коммит.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Потом я завершила фичу и объединила ее с основной веткой с помощью git flow feature finish task-management.
+Далее я переключилась на ветку develop и начала создание релиза:
+git checkout develop
+git flow release start v1.0.0
+Я внесла изменения, связанные с релизом:
+echo "v1.0.0" > version.txt
+git add version.txt
+git commit -m "Обновлена версия для релиза v1.0.0"
+Я завершила релиз и объединила его с ветками develop и master:
+git flow release finish v1.0.0
+Создала hotfix, если в процессе использования выявлена критическая ошибка:
+git flow hotfix start hotfix-1.0.1
+Внес изменения для исправления ошибки и закоммитил:
+git add file_with_error.py
+git commit -m "Исправлена критическая ошибка"
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Завершила hotfix и объедините его с ветками develop и master:
+git flow hotfix finish hotfix-1.0.1
+Отправила изменения на удаленный репозиторий:
+git push origin develop
+git push origin main
+
+GitHub ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+git-practice/Assets/J1.png at main · dieuvinakilebe/git-practice
+Contribute to dieuvinakilebe/git-practice development by creating an account on GitHub.
+Сначала я создала репозиторий git-practice на GitHub и скопировала его URL-адрес.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Далее с помощью терминала и команд git clone и cd я перешла в папку для локального сохранения репозитория.
+Потом я создала новый текстовый файл example.txt, добавила в него некоторый текст и запушила на GitHub в основуную ветку master, используя команды git add, git commit -m и git push.
+Затем я создала новую ветку second branch с помощью команды git branch, переключился на нее с помощью git checkout.
+После я отредактировала файл example.txt, повторила некоторые шаги из пункта 3, переключилась обратно в основную ветку master помощью git checkout main и слила изменения из second branch в основную ветку, используя git merge и git push.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Работа с ветками
+Я создала новый текстовый файл с базовой структурой книги kniga.txt.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+С помощью git checkout -b создала новую ветку feature-login.
+Далее я внесла изменения в файл, закоммитил их и отправила ветку на GitHub, используя git add, git commit -m, git push origin.
+Работа с удаленным репозиторием
+Я переключилась на основную ветку master, внесла изменения в файл kniga.txt, закоммитила изменения и отправила их на GitHub с помощью git add, git commit -m, git push origin.
+Моделирование конфликта
+Я вернулась в ветку feature-login, изменила главу 2 в файле kniga.txt, закоммитила изменения и отправила их на GitHub, используя git checkout, git add, git commit -m, git push origin.
+Разрешение конфликта
+Я вернулась в основную ветку master и попробовала слить изменения с помощью git checkout master и git pull origin master. Возник конфликт.
+Я разрешила конфликт, удалив метки и оставив нужные изменения.
+Я закоммитила решение конфликта и отправила его на GitHub с помощью git add, git commit -m, git push.
+Автоматизация проверки формата файлов при коммите
+Я создала bash-script, который будет выполнять проверку формата .txt файлов.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Я добавила скрипт в репозиторий, поместив его в папку .git/hooks и убедившись, что у него есть права на выполнение с помощью cp и chmod +x.
+Далее я попробовала внести изменения и закоммитить. Теперь, при каждой попытке закоммитить изменения, Git будет автоматически выполнять проверку формата файлов перед коммитом.
+При возникновении необходимости внести изменения в файлы, чтобы они соответствовали формату, нужно внести изменения, добавить файлы и снова попробовать закоммитить.
+Использование Git Flow в проекте
+Сначала я проверила, есть ли у меня на компьютере Git Flow.
+Затем я выполнила инициализацию Git Flow в корне репозитория с помощью git flow init.
+Создала ветку для новой функциональности "task-management" с помощью git flow feature start task-management.
+Внесла изменения в код для добавления функционала управления задачами task_manager.py и выполнила коммит.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Потом я завершила фичу и объединила ее с основной веткой с помощью git flow feature finish task-management.
+Далее я переключилась на ветку develop и начала создание релиза:
+git checkout develop
+git flow release start v1.0.0
+Я внесла изменения, связанные с релизом:
+echo "v1.0.0" > version.txt
+git add version.txt
+git commit -m "Обновлена версия для релиза v1.0.0"
+Я завершила релиз и объединила его с ветками develop и master:
+git flow release finish v1.0.0
+Создала hotfix, если в процессе использования выявлена критическая ошибка:
+git flow hotfix start hotfix-1.0.1
+Внес изменения для исправления ошибки и закоммитил:
+git add file_with_error.py
+git commit -m "Исправлена критическая ошибка"
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Завершила hotfix и объедините его с ветками develop и master:
+git flow hotfix finish hotfix-1.0.1
+Отправила изменения на удаленный репозиторий:
+git push origin develop
+git push origin main
+
+GitHub ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+git-practice/Assets/J1.png at main · dieuvinakilebe/git-practice
+Contribute to dieuvinakilebe/git-practice development by creating an account on GitHub.
+Сначала я создала репозиторий git-practice на GitHub и скопировала его URL-адрес.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Далее с помощью терминала и команд git clone и cd я перешла в папку для локального сохранения репозитория.
+Потом я создала новый текстовый файл example.txt, добавила в него некоторый текст и запушила на GitHub в основуную ветку master, используя команды git add, git commit -m и git push.
+Затем я создала новую ветку second branch с помощью команды git branch, переключился на нее с помощью git checkout.
+После я отредактировала файл example.txt, повторила некоторые шаги из пункта 3, переключилась обратно в основную ветку master помощью git checkout main и слила изменения из second branch в основную ветку, используя git merge и git push.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Работа с ветками
+Я создала новый текстовый файл с базовой структурой книги kniga.txt.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)	
+С помощью git checkout -b создала новую ветку feature-login.
+Далее я внесла изменения в файл, закоммитил их и отправила ветку на GitHub, используя git add, git commit -m, git push origin.
+Работа с удаленным репозиторием
+Я переключилась на основную ветку master, внесла изменения в файл kniga.txt, закоммитила изменения и отправила их на GitHub с помощью git add, git commit -m, git push origin.
+Моделирование конфликта
+Я вернулась в ветку feature-login, изменила главу 2 в файле kniga.txt, закоммитила изменения и отправила их на GitHub, используя git checkout, git add, git commit -m, git push origin.
+Разрешение конфликта
+Я вернулась в основную ветку master и попробовала слить изменения с помощью git checkout master и git pull origin master. Возник конфликт.
+Я разрешила конфликт, удалив метки и оставив нужные изменения.
+Я закоммитила решение конфликта и отправила его на GitHub с помощью git add, git commit -m, git push.
+Автоматизация проверки формата файлов при коммите
+Я создала bash-script, который будет выполнять проверку формата .txt файлов.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Я добавила скрипт в репозиторий, поместив его в папку .git/hooks и убедившись, что у него есть права на выполнение с помощью cp и chmod +x.
+Далее я попробовала внести изменения и закоммитить. Теперь, при каждой попытке закоммитить изменения, Git будет автоматически выполнять проверку формата файлов перед коммитом.
+При возникновении необходимости внести изменения в файлы, чтобы они соответствовали формату, нужно внести изменения, добавить файлы и снова попробовать закоммитить.
+Использование Git Flow в проекте
+Сначала я проверила, есть ли у меня на компьютере Git Flow.
+Затем я выполнила инициализацию Git Flow в корне репозитория с помощью git flow init.
+Создала ветку для новой функциональности "task-management" с помощью git flow feature start task-management.
+Внесла изменения в код для добавления функционала управления задачами task_manager.py и выполнила коммит.
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Потом я завершила фичу и объединила ее с основной веткой с помощью git flow feature finish task-management.
+Далее я переключилась на ветку develop и начала создание релиза:
+git checkout develop
+git flow release start v1.0.0
+Я внесла изменения, связанные с релизом:
+echo "v1.0.0" > version.txt
+git add version.txt
+git commit -m "Обновлена версия для релиза v1.0.0"
+Я завершила релиз и объединила его с ветками develop и master:
+git flow release finish v1.0.0
+Создала hotfix, если в процессе использования выявлена критическая ошибка:
+git flow hotfix start hotfix-1.0.1
+Внес изменения для исправления ошибки и закоммитил:
+git add file_with_error.py
+git commit -m "Исправлена критическая ошибка"
+  ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+Завершила hotfix и объедините его с ветками develop и master:
+git flow hotfix finish hotfix-1.0.1
+Отправила изменения на удаленный репозиторий:
+git push origin develop
+git push origin main
+
+GitHub ![https://github.com/dieuvinakilebe/git-practice/blob/main](Assets/iaA.jpg)
+
+git-practice/Assets/J1.png at main · dieuvinakilebe/git-practice
+Contribute to dieuvinakilebe/git-practice development by creating an account on GitHub.
+м
+
+
